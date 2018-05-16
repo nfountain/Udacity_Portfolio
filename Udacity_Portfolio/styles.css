@@ -1,0 +1,175 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Forum', cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* flex containers */
+
+.container {
+  max-width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.container_a {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.logo {
+    flex: .5;
+    align-items: center;
+}
+
+.logo_img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main_title {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 2;
+    padding-left: 1em;
+}
+
+.title {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2em;
+}
+
+.subtitle {
+    font-family: 'Forum', cursive;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#top_menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    order: 0;
+    max-width: 100%;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+a {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Colors & Main Image */
+
+.container_b {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1em;
+}
+
+.color_samples {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 20%;
+}
+
+.color {
+  height: 40px;
+  width: 40px;
+  padding: 1em;
+}
+
+.pink {
+  background-color: rgb(252, 32, 197);
+}
+
+.seafoam {
+  background-color: rgb(77, 190, 161);
+}
+
+.lt_blue {
+  background-color: rgb(255, 250, 247);
+}
+
+.main_img {
+  max-width: 80%;
+  background-color: red;
+}
+
+/* Project Section */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.project1, .project2, .project3 {
+    max-width: 22%;
+    min-width: 190px;
+    justify-content: space-around;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.project_pic {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 170px;
+}
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (max-width: 715px) {
+    .container_a {
+        order: 0;
+    }
+    #top_menu {
+        justify-content: center;
+        order: 1;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .container_a {
+        order: 0;
+    }
+    #top_menu {
+        order: 1;
+    }
+}
